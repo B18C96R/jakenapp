@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIジャンケンアプリ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 永続的WebAppをデプロイする時はCDNを使わないようにする（直でCodeを置く）↓ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/janken.js"></script>
+</head>
+<body>
+    <div id="janken-app">
+        <p>好きな手をクリックしてね！</p>
+        <div id="player-hands">
+            <img src="img/goo.png" alt="goo" class="hand" id="goo">
+            <img src="img/chee.png" alt="chee" class="hand" id="chee">
+            <img src="img/pa.png" alt="pa" class="hand" id="pa">
+        </div>
+        <div class="box">
+            <img id="cpu-hand" src="img/goo.png">
+            <!-- <p>CPUの手</p> -->
+        </div>
+        <p id="result"></p>
+    </div>
+    <div class="btn cubic">
+        <span class="hovering">Click to reload</span>
+        <span class="default">Touch me</span>
+    </div>
+</body>
+</html>
